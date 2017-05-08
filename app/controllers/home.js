@@ -1,10 +1,10 @@
 module.exports.home = function(application, req, res){
 
-	// if(req.session.autorizado){
+	if(req.session.autorizado){
 	 	res.render("home");
-	// } else {
-	//	res.send('Usuário precisa fazer login');
-	//}
+	 } else {
+		res.send('Usuário precisa fazer login');
+	}
 }
 
 module.exports.sair = function(application, req, res){

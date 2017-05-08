@@ -65,15 +65,14 @@ UsuariosDAO.prototype.autenticar = function(usuario, req, res){
          if(result[0] != undefined && result[0].tipo == 'administrador' && result[0].senha == usuario.senha && result[0].usuario == usuario.usuario){
 
 
-				//	req.session.autorizado = true;
-					
-				//	req.session.usuario = result[0].usuario;
-						res.redirect("home");
+					req.session.autorizado = true;
+					req.session.usuario = result[0].usuario;
+						
 				}
 
-				//  if(req.session.autorizado){
-				//  	res.redirect("home");
-				// } 
+				if(req.session.autorizado){
+				  	res.redirect("home");
+				 } 
 				else {
 					res.render("index",{validacao:{msg:'Usuário não autorizado'}});
 				}
