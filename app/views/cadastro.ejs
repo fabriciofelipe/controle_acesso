@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	rel="stylesheet" />
+<meta charset="UTF-8">
+
+
+
+</head>
+<body style="background: #f4f4f4; font-family: Arial; font-size: 12px;">
+
+
+	<div style="width: 1043px; margin: auto">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<div class="col-xs-12"></div>
+				<div class="row" id="topoFiltro" style="cursor: pointer;">
+					<div class="col-xs-11">
+						<b> Cadastro de Usuário</b>
+					</div>
+				</div>
+				<hr style="margin-top: 10px; border: 1px dotted #CCC;">
+						
+				<div class="col-xs-12">
+					<form action="/cadastrar" method="post" name="cadastrar"> 
+					<div class="col-xs-12">
+						<div class="row">
+							
+						
+							<div class="col-xs-6">
+								Nome: <span style="color: red">*</span> <input type="text"
+									class="form-control" name="nome" value="">
+							</div>
+							<div class="col-xs-6">
+								Tipo : <span style="color: red">*</span> <input
+									type="text" class="form-control" name="tipo"
+									value="">
+							</div>
+						</div>
+						<br />
+						<div class="row">
+					
+							<div class="col-xs-6">
+								Usuário <span style="color: red">*</span> <input type="text" id="endereco"
+									class="form-control" name="usuario"
+									value="">
+							</div>
+							<div class="col-xs-6">
+								Senha : <span style="color: red">*</span> <input type="password"
+									class="form-control" name="senha"
+									value="">
+							</div>
+						</div>
+						<br /> <br />
+						<div class="row">
+							<div class="col-xs-2 col-xs-offset-8">
+								<button class="btn btn-primary" onclick="enviarAutor()" id="btnConsultar">Incluir</button>
+							</div>
+							
+						</div>
+					</div>
+					</form>
+				</div>
+				<br />
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
